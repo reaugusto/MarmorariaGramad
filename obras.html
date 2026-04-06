@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Obras | Marmoraria Gramad — São Paulo</title>
+  <meta name="description" content="Explore nossos projetos reais de marmoraria: cozinhas, banheiros, churrasqueiras e escadas com acabamento de alto padrão em pedras naturais e quartzos.">
+  <link rel="canonical" href="https://www.marmorariagramad.com.br/obras.html">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Obras de Alto Padrão | Marmoraria Gramad">
+  <meta property="og:description" content="Conheça nossos últimos projetos e inspire-se para sua obra.">
+  <meta property="og:image" content="https://www.marmorariagramad.com.br/assets/img/site/og-works.jpg">
+
+  <link rel="icon" href="assets/img/site/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ─── BARRA DE CATEGORIAS STICKY ─── */
+    .cat-nav {
+      position: sticky;
+      top: var(--nav-h);
+      z-index: 50;
+      background: rgba(232, 226, 217, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(29,27,22,0.06);
+      padding: 0 var(--gutter);
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .cat-nav::-webkit-scrollbar { display: none; }
+    .cat-nav-inner {
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+      min-width: max-content;
+    }
+    .cat-nav-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 24px;
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      transition: all 0.3s var(--ease-out);
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      cursor: none;
+    }
+    .cat-nav-item:hover {
+      color: var(--text-primary);
+      background: rgba(181, 113, 74, 0.04);
+    }
+    .cat-nav-item.active {
+      color: var(--text-primary);
+      border-bottom-color: var(--bg-card);
+    }
+    .cat-nav-thumb {
+      width: 36px;
+      height: 36px;
+      border-radius: 4px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .cat-nav-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .cat-nav-count {
+      font-size: 9px;
+      letter-spacing: 0.08em;
+      color: var(--bg-card);
+      opacity: 0.7;
+      margin-left: -6px;
+    }
+
+    /* ─── SEÇÕES DE COLEÇÃO ─── */
+    .collection-section {
+      padding: var(--section-v) var(--gutter);
+    }
+    .collection-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 48px;
+    }
+    .collection-header h2 {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 5vw, 56px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      line-height: 0.95;
+    }
+    .collection-count {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+    }
+
+    /* ─── HERO COMPACTO DE CATEGORIAS ─── */
+    .cat-hero-strip {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 2px;
+      margin-bottom: 0;
+    }
+    .cat-hero-card {
+      position: relative;
+      overflow: hidden;
+      cursor: none;
+      display: block;
+    }
+    .cat-hero-card-img {
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      position: relative;
+    }
+    .cat-hero-card-img img {
+      transition: transform 0.8s var(--ease-out);
+    }
+    .cat-hero-card:hover .cat-hero-card-img img {
+      transform: scale(1.08);
+    }
+    .cat-hero-card-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(29,27,22,0.55) 0%, transparent 70%);
+    }
+    .cat-hero-label {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      z-index: 5;
+      color: #fff;
+    }
+    .cat-hero-label h3 {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .cat-hero-label span {
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.65;
+    }
+
+    @media (max-width: 900px) {
+      .cat-hero-strip { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .cat-hero-strip { grid-template-columns: repeat(2, 1fr); }
+      .cat-nav-item { padding: 12px 16px; font-size: 10px; }
+      .cat-nav-thumb { width: 28px; height: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="custom-cursor"></div>
+<div id="page-curtain"></div>
+
+<!-- ─── NAVEGAÇÃO ─── -->
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">Marmoraria Gramad</a>
+  <ul class="nav-links">
+    <li><a href="material-category.html">Mármores</a></li>
+    <li><a href="portfolio.html">Projetos</a></li>
+    <li><a href="obras.html" class="active">Obras</a></li>
+    <li><a href="galeria.html">Coleções</a></li>
+    <li><a href="quem-somos.html">Sobre</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-menu">
+  <div class="mobile-menu-header"><span class="mobile-menu-logo">Marmoraria Gramad</span></div>
+  <ul class="mobile-menu-links">
+    <li><a href="material-category.html">Mármores</a></li>
+    <li><a href="portfolio.html">Projetos</a></li>
+    <li><a href="obras.html" class="active">Obras</a></li>
+    <li><a href="galeria.html">Coleções</a></li>
+    <li><a href="quem-somos.html">Sobre</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+  <div class="mobile-menu-accent"></div>
+  <div class="mobile-menu-footer">
+    <p>São Paulo · Uberaba<br>Brasil</p>
+    <a href="contato.html" class="mobile-menu-cta">Solicitar Orçamento</a>
+  </div>
+</div>
+
+<main>
+
+  <!-- ─── HEADER ─── -->
+  <div class="cat-header">
+    <p class="section-label reveal">Portfólio de Projetos</p>
+    <h1 class="section-title reveal" data-delay="0.05">Projetos & Obras Realizadas</h1>
+    <p style="margin-top: 24px; max-width: 520px; font-size: 15px; line-height: 1.7; color: var(--text-secondary);" class="reveal d-3">
+      Explore projetos autênticos de arquitetura e design. Do detalhe de uma bancada às escadarias monumentais, testemunhe a versatilidade de nossas pedras naturais e fabricadas aplicadas em ambientes reais.
+    </p>
+  </div>
+
+  <!-- ─── MINI CARDS DE CATEGORIA (HERO COMPACTO) ─── -->
+  <div class="cat-hero-strip">
+    <a href="#cozinhas" class="cat-hero-card reveal">
+      <div class="cat-hero-card-img"><img src="https://static.wixstatic.com/media/9072bc_84d5c4ad6c5d4855ab776443af3418d0.jpg" alt="Cozinhas"></div>
+      <div class="cat-hero-label"><h3>Cozinhas</h3></div>
+    </a>
+    <a href="#churrasqueiras" class="cat-hero-card reveal" data-delay="0.05">
+      <div class="cat-hero-card-img"><img src="https://static.wixstatic.com/media/9072bc_01d65a9efbe741cf836c4eee82ea2f1d.jpg" alt="Churrasqueiras"></div>
+      <div class="cat-hero-label"><h3>Churrasqueiras</h3></div>
+    </a>
+    <a href="#salas" class="cat-hero-card reveal" data-delay="0.1">
+      <div class="cat-hero-card-img"><img src="https://static.wixstatic.com/media/9072bc_ea196003cabb4578a7270a61c28bf6e8.jpg" alt="Salas e Lareiras"></div>
+      <div class="cat-hero-label"><h3>Salas e Lareiras</h3></div>
+    </a>
+    <a href="#banheiros" class="cat-hero-card reveal" data-delay="0.15">
+      <div class="cat-hero-card-img"><img src="https://static.wixstatic.com/media/9072bc_012b2a7122e74f52a5220fa3e9da220e.jpg" alt="Banheiros"></div>
+      <div class="cat-hero-label"><h3>Banheiros</h3></div>
+    </a>
+    <a href="#escadas" class="cat-hero-card reveal" data-delay="0.2">
+      <div class="cat-hero-card-img"><img src="https://static.wixstatic.com/media/9072bc_2b3c4689f22b41248b0fae811eb747af.jpg" alt="Escadas"></div>
+      <div class="cat-hero-label"><h3>Escadas</h3></div>
+    </a>
+  </div>
+
+  <!-- ─── BARRA DE NAVEGAÇÃO STICKY ─── -->
+  <div class="cat-nav" id="catNav">
+    <div class="cat-nav-inner">
+      <a href="#cozinhas" class="cat-nav-item active" data-section="cozinhas">
+        Cozinhas
+      </a>
+      <a href="#churrasqueiras" class="cat-nav-item" data-section="churrasqueiras">
+        Churrasqueiras
+      </a>
+      <a href="#salas" class="cat-nav-item" data-section="salas">
+        Salas e Lareiras
+      </a>
+      <a href="#banheiros" class="cat-nav-item" data-section="banheiros">
+        Banheiros e Lavabos
+      </a>
+      <a href="#escadas" class="cat-nav-item" data-section="escadas">
+        Escadas
+      </a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- ─── SEÇÃO: COZINHAS ─── -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="collection-section" id="cozinhas">
+    <div class="collection-header reveal">
+      <h2>Cozinhas</h2>
+    </div>
+    <div class="products-grid" id="cozinhas-grid"></div>
+  </div>
+
+  <!-- ─── SEÇÃO: CHURRASQUEIRAS ─── -->
+  <div class="collection-section" id="churrasqueiras" style="background: var(--bg-light);">
+    <div class="collection-header reveal">
+      <h2>Churrasqueiras</h2>
+    </div>
+    <div class="products-grid" id="churrasqueiras-grid"></div>
+  </div>
+
+  <!-- ─── SEÇÃO: SALAS E LAREIRAS ─── -->
+  <div class="collection-section" id="salas">
+    <div class="collection-header reveal">
+      <h2>Salas e Lareiras</h2>
+    </div>
+    <div class="products-grid" id="salas-grid"></div>
+  </div>
+
+  <!-- ─── SEÇÃO: BANHEIROS ─── -->
+  <div class="collection-section" id="banheiros" style="background: var(--bg-light);">
+    <div class="collection-header reveal">
+      <h2>Banheiros e Lavabos</h2>
+    </div>
+    <div class="products-grid" id="banheiros-grid"></div>
+  </div>
+
+  <!-- ─── SEÇÃO: ESCADAS ─── -->
+  <div class="collection-section" id="escadas">
+    <div class="collection-header reveal">
+      <h2>Escadas</h2>
+    </div>
+    <div class="products-grid" id="escadas-grid"></div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="cta-title">Solicite seu<br>orçamento</h2>
+    <a href="contato.html" class="cta-link">Fale conosco →</a>
+  </section>
+
+</main>
+
+<!-- ─── MODAL DE DETALHE ─── -->
+<div class="stone-modal" id="stoneModal">
+  <div class="stone-modal-overlay" onclick="closeModal()"></div>
+  <div class="stone-modal-content">
+    <button class="stone-modal-close" onclick="closeModal()">✕</button>
+    <div class="stone-modal-img">
+      <img id="modalImg" src="" alt="">
+    </div>
+    <div class="stone-modal-info">
+      <p class="stone-modal-label" id="modalLabel">Pedra Natural</p>
+      <h2 class="stone-modal-name" id="modalName"></h2>
+      <p class="stone-modal-origin" id="modalOrigin"></p>
+      <p class="stone-modal-desc" id="modalDesc"></p>
+      <a href="contato.html" class="btn-terracota" style="margin-top: 32px;">Solicitar Orçamento</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Marmoraria Gramad</div>
+    <nav class="footer-nav">
+      <a href="material-category.html">Mármores</a>
+      <a href="portfolio.html">Projetos</a>
+      <a href="obras.html">Obras</a>
+      <a href="galeria.html">Coleções</a>
+      <a href="quem-somos.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 Marmoraria Gramad. Todos os direitos reservados.</p>
+    <p class="footer-copy">São Paulo · Uberaba, Brasil</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/obras-data.js"></script>
+<script>
+  // Sticky nav — highlight ativo ao scroll
+  document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('.cat-nav-item[data-section]');
+    const sections = [];
+
+    navItems.forEach(item => {
+      const id = item.dataset.section;
+      const section = document.getElementById(id);
+      if (section) sections.push({ id, el: section, navItem: item });
+    });
+
+    if (typeof IntersectionObserver !== 'undefined' && sections.length) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            navItems.forEach(n => n.classList.remove('active'));
+            const match = sections.find(s => s.el === entry.target);
+            if (match) match.navItem.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-40% 0px -50% 0px' });
+
+      sections.forEach(s => observer.observe(s.el));
+    }
+  });
+</script>
+<!-- Floating Contact Button -->
+<div class="floating-contact">
+  <button class="floating-main-btn" aria-label="Abrir contatos">
+    <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+  </button>
+  
+  <div class="floating-options">
+    <a href="https://wa.me/551137193000" class="floating-opt opt-whatsapp" target="_blank">
+      <span class="floating-opt-label">WhatsApp</span>
+      <div class="floating-opt-icon">
+        <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.038 3.284l-.569 2.1c-.149.546.459 1.034.983.814l2.052-.861c.675.242 1.587.434 2.261.433 3.181 0 5.767-2.586 5.768-5.766.001-3.18-2.584-5.77-5.765-5.77zm3.039 8.199c-.145.412-.733.743-1.018.784-.244.035-.558.064-1.63-.377-1.391-.572-2.285-1.993-2.355-2.085-.07-.093-.574-.764-.574-1.458 0-.693.363-1.034.492-1.177.13-.143.283-.178.377-.178.093 0 .185.001.266.005.086.004.202-.033.316.242.117.283.399.972.434 1.043.035.072.058.155.011.248-.046.094-.07.155-.139.236-.07.081-.146.181-.209.242-.07.066-.143.139-.062.278.081.139.362.597.776.964.533.473.985.62 1.133.693.148.073.235.061.32-.036.086-.097.368-.429.467-.576.097-.148.197-.123.332-.073.136.05.861.406 1.01.48.148.074.247.11.283.172.036.063.036.364-.109.775z"/></svg>
+      </div>
+    </a>
+    <a href="tel:+551137193000" class="floating-opt">
+      <span class="floating-opt-label">Televendas</span>
+      <div class="floating-opt-icon">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      </div>
+    </a>
+    <a href="tel:+551136371000" class="floating-opt">
+      <span class="floating-opt-label">Telefone</span>
+      <div class="floating-opt-icon">
+        <svg viewBox="0 0 24 24"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.1-.03-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.58l2.2-2.21c.28-.27.36-.66.25-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+      </div>
+    </a>
+  </div>
+</div>
+</body>
+</html>
+

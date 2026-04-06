@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós | Marmoraria Gramad — Especialista em Pedras em SP</title>
+  <meta name="description" content="Conheça a Marmoraria Gramad. Mais de 25 anos transformando matérias minerais em experiências espaciais memoráveis com tecnologia e maestria artesanal.">
+  <link rel="canonical" href="https://www.marmorariagramad.com.br/quem-somos.html">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Marmoraria Gramad: Tradição e Excelência">
+  <meta property="og:description" content="Nossa história é forjada na seleção rigorosa de jazidas e no acabamento de precisão.">
+  <meta property="og:image" content="https://www.marmorariagramad.com.br/assets/img/site/og-about.jpg">
+
+  <link rel="icon" href="assets/img/site/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    .manifesto-section {
+      padding: var(--section-v) var(--gutter);
+      max-width: 780px;
+    }
+
+    .manifesto-text {
+      font-family: var(--font-display);
+      font-size: clamp(24px, 3.5vw, 42px);
+      font-weight: 400;
+      line-height: 1.3;
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+    }
+
+    .manifesto-text em {
+      font-style: italic;
+      color: var(--bg-card);
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin: 0;
+    }
+
+    .value-card {
+      background: var(--bg-light);
+      padding: 48px 40px;
+    }
+
+    .value-number {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--bg-card);
+      margin-bottom: 20px;
+    }
+
+    .value-title {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .value-text {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+    }
+
+    .team-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      background: var(--bg-base);
+    }
+
+    .team-img {
+      aspect-ratio: 3/4;
+      overflow: hidden;
+    }
+
+    .team-bio {
+      padding: 60px 48px;
+      background: var(--bg-light);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .team-bio h3 {
+      font-family: var(--font-display);
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .team-bio .role {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--bg-card);
+      margin-bottom: 24px;
+    }
+
+    .team-bio p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      color: #fff;
+      padding: 48px 40px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: clamp(40px, 5vw, 64px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      opacity: 0.75;
+    }
+
+    .historia-section {
+      display: grid;
+      grid-template-columns: 1fr auto 1.5fr;
+      gap: 80px;
+      padding: var(--section-v) var(--gutter);
+      align-items: center;
+    }
+
+    .historia-logo {
+      width: 140px;
+      pointer-events: none;
+    }
+
+    .historia-text {
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+    }
+
+    .historia-text p+p {
+      margin-top: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .historia-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .historia-logo {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="custom-cursor"></div>
+  <div id="page-curtain"></div>
+
+  <nav class="site-nav">
+    <a href="index.html" class="nav-logo">Marmoraria Gramad</a>
+    <ul class="nav-links">
+      <li><a href="material-category.html">Mármores</a></li>
+      <li><a href="portfolio.html">Projetos</a></li>
+      <li><a href="obras.html">Obras</a></li>
+      <li><a href="galeria.html">Coleções</a></li>
+      <li><a href="quem-somos.html" class="active">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu">
+    <div class="mobile-menu-header"><span class="mobile-menu-logo">Marmoraria Gramad</span></div>
+    <ul class="mobile-menu-links">
+      <li><a href="material-category.html">Mármores</a></li>
+      <li><a href="portfolio.html">Projetos</a></li>
+      <li><a href="obras.html">Obras</a></li>
+      <li><a href="galeria.html">Coleções</a></li>
+      <li><a href="quem-somos.html" class="active">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <div class="mobile-menu-accent"></div>
+    <div class="mobile-menu-footer">
+      <p>São Paulo · Uberaba<br>Brasil</p>
+      <a href="contato.html" class="mobile-menu-cta">Solicitar Orçamento</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Header -->
+    <div class="cat-header">
+      <p class="section-label reveal">Nossa História</p>
+      <h1 class="section-title reveal" data-delay="0.05">Sobre</h1>
+    </div>
+
+    <!-- Manifesto -->
+    <div class="manifesto-section">
+      <p class="manifesto-text reveal">
+        Acreditamos que cada pedra carrega
+        <em>a assinatura do tempo</em>. Nosso trabalho é
+        encontrar essa matéria única e levá-la
+        aos projetos que merecem.
+      </p>
+    </div>
+
+
+
+    <!-- História -->
+    <div class="historia-section">
+      <div class="reveal">
+        <h2 class="editorial-headline">A Nossa<br>História</h2>
+      </div>
+
+      <div class="reveal d-1" style="display:flex; justify-content:center;">
+        <img src="assets/img/site/logo-gramad.avif" alt="Marmoraria Gramad Logo" class="historia-logo">
+      </div>
+
+      <div class="reveal d-2">
+        <div class="historia-text">
+          <p>A Marmoraria Gramad nasceu da vontade de ser referência no mercado de marmorarias em São Paulo, com amplo
+            investimento na qualidade dos materiais, instalação e atendimento exclusivo para arquitetos e construtoras.
+          </p>
+          <p>Com mais de 25 anos de atuação, a Gramad destaca-se pelo seu depósito variado de mármores, granitos,
+            quartzos e quartzitos, além de pedras tecnológicas como Nanoglass e Silestone. Nossa equipe técnica é
+            altamente qualificada para garantir que cada projeto seja entregue com acabamento impecável e dentro do
+            prazo.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Valores -->
+    <div class="section">
+      <p class="section-label reveal">Nossa Filosofia</p>
+      <h2 class="section-title reveal" data-delay="0.05" style="margin-bottom: 64px;">Princípios</h2>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <p class="value-number">01</p>
+        <h3 class="value-title">Origem Certificada</h3>
+        <p class="value-text">Trabalhamos apenas com pedreiras de extração sustentável e cadeia produtiva rastreável.
+          Cada chapa tem procedência documentada.</p>
+      </div>
+      <div class="value-card reveal d-1">
+        <p class="value-number">02</p>
+        <h3 class="value-title">Curadoria Rigorosa</h3>
+        <p class="value-text">Menos de 15% das chapas vistas em visitas às pedreiras são selecionadas para o nosso
+          acervo. Qualidade acima de quantidade.</p>
+      </div>
+      <div class="value-card reveal d-2">
+        <p class="value-number">03</p>
+        <h3 class="value-title">Assessoria Técnica</h3>
+        <p class="value-text">Acompanhamos o projeto desde a escolha da pedra até a aplicação final, garantindo que a
+          visão do arquiteto se materialize sem compromissos.</p>
+      </div>
+    </div>
+
+    <!-- Sobre Sections -->
+    <div class="values-grid" style="margin-top: 2px;">
+      <div class="value-card reveal">
+        <p class="value-number">Maquinários</p>
+        <h3 class="value-title">Tecnologia</h3>
+        <p class="value-text">Investimos em tecnologia e inovação com maquinário de última geração para aprimorar nossos
+          processos produtivos e garantir resultados com maior precisão.</p>
+      </div>
+      <div class="value-card reveal d-1">
+        <p class="value-number">Sustentabilidade</p>
+        <h3 class="value-title">Compromisso</h3>
+        <p class="value-text">Temos compromisso com a natureza buscando práticas responsáveis em nossas operações, desde
+          a seleção de fornecedores sustentáveis até a adoção de medidas de reaproveitamento.</p>
+      </div>
+      <div class="value-card reveal d-2">
+        <p class="value-number">Equipe</p>
+        <h3 class="value-title">Excelência</h3>
+        <p class="value-text">Nossa equipe é qualificada para ter um ótimo atendimento, compreensão dos projetos dos
+          profissionais de construção e estar sempre atenta às novidades do mercado.</p>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-row" style="margin-top: 2px;">
+      <div class="stat-box reveal">
+        <p class="stat-number">+25</p>
+        <p class="stat-label">Anos de mercado</p>
+      </div>
+      <div class="stat-box reveal d-1">
+        <p class="stat-number">500+</p>
+        <p class="stat-label">Projetos entregues</p>
+      </div>
+      <div class="stat-box reveal d-2">
+        <p class="stat-number">20+</p>
+        <p class="stat-label">Países de origem</p>
+      </div>
+      <div class="stat-box reveal d-3">
+        <p class="stat-number">100%</p>
+        <p class="stat-label">Rastreabilidade</p>
+      </div>
+    </div>
+
+    <!-- Locais -->
+    <div class="historia-section">
+      <div class="reveal">
+        <h2 class="editorial-headline">Nossa<br>Sede</h2>
+      </div>
+      <div class="reveal d-2">
+        <div class="historia-text">
+          <p><strong>São Paulo — SP (Jaguaré)</strong><br>Av. Onófrio Milano, 500. Próximo à ponte do Jaguaré, atrás da
+            Leroy Merlin.</p>
+          <p>Atendemos toda a Grande São Paulo, Litoral e Interior (Alphaville, Tamboré, Granja Viana e Cotia).</p>
+        </div>
+        <div style="display:flex; gap:16px; margin-top: 24px;">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Av.%20On%C3%B3frio%20Milano%2C%20500%20-%20Jaguar%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP"
+            target="_blank" rel="noopener" class="btn-outline">Como Chegar →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <h2 class="cta-title">Pronto para<br>o próximo passo?</h2>
+      <a href="contato.html" class="cta-link">Fale conosco →</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">Marmoraria Gramad</div>
+      <nav class="footer-nav">
+        <a href="material-category.html">Mármores</a>
+        <a href="portfolio.html">Projetos</a>
+        <a href="obras.html">Obras</a>
+        <a href="galeria.html">Coleções</a>
+        <a href="quem-somos.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Marmoraria Gramad. Todos os direitos reservados.</p>
+      <p class="footer-copy">São Paulo · Uberaba, Brasil</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- Floating Contact Button -->
+  <div class="floating-contact">
+    <button class="floating-main-btn" aria-label="Abrir contatos">
+      <svg viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+      </svg>
+    </button>
+
+    <div class="floating-options">
+      <a href="https://wa.me/551137193000" class="floating-opt opt-whatsapp" target="_blank">
+        <span class="floating-opt-label">WhatsApp</span>
+        <div class="floating-opt-icon">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.038 3.284l-.569 2.1c-.149.546.459 1.034.983.814l2.052-.861c.675.242 1.587.434 2.261.433 3.181 0 5.767-2.586 5.768-5.766.001-3.18-2.584-5.77-5.765-5.77zm3.039 8.199c-.145.412-.733.743-1.018.784-.244.035-.558.064-1.63-.377-1.391-.572-2.285-1.993-2.355-2.085-.07-.093-.574-.764-.574-1.458 0-.693.363-1.034.492-1.177.13-.143.283-.178.377-.178.093 0 .185.001.266.005.086.004.202-.033.316.242.117.283.399.972.434 1.043.035.072.058.155.011.248-.046.094-.07.155-.139.236-.07.081-.146.181-.209.242-.07.066-.143.139-.062.278.081.139.362.597.776.964.533.473.985.62 1.133.693.148.073.235.061.32-.036.086-.097.368-.429.467-.576.097-.148.197-.123.332-.073.136.05.861.406 1.01.48.148.074.247.11.283.172.036.063.036.364-.109.775z" />
+          </svg>
+        </div>
+      </a>
+      <a href="tel:+551137193000" class="floating-opt">
+        <span class="floating-opt-label">Televendas</span>
+        <div class="floating-opt-icon">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+          </svg>
+        </div>
+      </a>
+      <a href="tel:+551136371000" class="floating-opt">
+        <span class="floating-opt-label">Telefone</span>
+        <div class="floating-opt-icon">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.1-.03-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.58l2.2-2.21c.28-.27.36-.66.25-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z" />
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos & Portfólio de Luxo | Marmoraria Gramad</title>
+  <meta name="description" content="Onde a pedra encontra a arquitetura. Confira projetos exclusivos realizados pela Marmoraria Gramad, da CASACOR São Paulo às residências privadas mais sofisticadas.">
+  <link rel="canonical" href="https://www.marmorariagramad.com.br/portfolio.html">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mestria em Superfícies: Portfólio Marmoraria Gramad">
+  <meta property="og:description" content="A união perfeita entre natureza e arquitetura. Conheça nossos projetos premiados.">
+  <meta property="og:image" content="https://www.marmorariagramad.com.br/assets/img/portfolio/og-portfolio.jpg">
+
+  <link rel="icon" href="assets/img/site/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos específicos do portfólio */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+    }
+    .portfolio-item-full {
+      grid-column: 1 / -1;
+    }
+    .portfolio-item {
+      position: relative;
+      overflow: hidden;
+    }
+    .portfolio-item-img {
+      aspect-ratio: 16/10;
+      overflow: hidden;
+    }
+    .portfolio-item-full .portfolio-item-img {
+      aspect-ratio: 21/9;
+    }
+    .portfolio-item-img img {
+      transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .portfolio-item:hover .portfolio-item-img img {
+      transform: scale(1.05);
+    }
+    .portfolio-item-card {
+      position: absolute;
+      bottom: 32px;
+      left: 40px;
+      background: var(--bg-card);
+      color: #fff;
+      padding: 22px 28px;
+      min-width: 260px;
+      z-index: 5;
+    }
+    .portfolio-item-card .p-name {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .portfolio-item-card .p-meta {
+      display: flex;
+      gap: 20px;
+      font-family: var(--font-body);
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+    .portfolio-about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      padding: var(--section-v) var(--gutter);
+      background: var(--bg-light);
+      align-items: center;
+    }
+    @media (max-width: 900px) {
+      .portfolio-grid { grid-template-columns: 1fr; }
+      .portfolio-about { grid-template-columns: 1fr; gap: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="custom-cursor"></div>
+<div id="page-curtain"></div>
+
+<!-- ─── NAVEGAÇÃO ─── -->
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">Marmoraria Gramad</a>
+  <ul class="nav-links">
+    <li><a href="material-category.html">Mármores</a></li>
+    <li><a href="portfolio.html" class="active">Projetos</a></li>
+    <li><a href="obras.html">Obras</a></li>
+    <li><a href="galeria.html">Coleções</a></li>
+    <li><a href="quem-somos.html">Sobre</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-menu">
+  <div class="mobile-menu-header"><span class="mobile-menu-logo">Marmoraria Gramad</span></div>
+  <ul class="mobile-menu-links">
+    <li><a href="material-category.html">Mármores</a></li>
+    <li><a href="portfolio.html" class="active">Projetos</a></li>
+    <li><a href="obras.html">Obras</a></li>
+    <li><a href="galeria.html">Coleções</a></li>
+    <li><a href="quem-somos.html">Sobre</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+  <div class="mobile-menu-accent"></div>
+  <div class="mobile-menu-footer">
+    <p>São Paulo · Uberaba<br>Brasil</p>
+    <a href="contato.html" class="mobile-menu-cta">Solicitar Orçamento</a>
+  </div>
+</div>
+
+<main>
+
+  <!-- ─── HEADER ─── -->
+  <div class="cat-header" style="padding-bottom: 80px;">
+    <p class="section-label reveal">Maestria em Superfície</p>
+    <h1 class="section-title reveal" data-delay="0.05">Projetos</h1>
+    <p style="margin-top: 24px; max-width: 480px; font-size: 15px; line-height: 1.7; color: var(--text-secondary);" class="reveal d-3">
+      Onde a pedra encontra a arquitetura. Cada projeto é uma narrativa única — de espaços que guardam a memória do mineral.
+    </p>
+  </div>
+
+  <!-- ─── LISTA DE PROJETOS ─── -->
+  <div class="portfolio-grid">
+
+    <!-- CASACOR SP 2018 — Destaque (full width) -->
+    <div class="portfolio-item portfolio-item-full reveal">
+      <div class="portfolio-item-img">
+        <img
+          src="assets/img/portfolio/nome-obra.jpg"
+          alt="CASACOR SP 2018"
+        >
+      </div>
+      <div class="portfolio-item-card">
+        <p class="p-name">CASACOR SP 2018</p>
+        <div class="p-meta">
+          <span>São Paulo</span>
+          <span>Mostra de Decoração</span>
+          <span>2018</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASASHOPPING UBERABA -->
+    <div class="portfolio-item reveal">
+      <div class="portfolio-item-img">
+        <img
+          src="assets/img/portfolio/nome-obra-2.jpg"
+          alt="CASASHOPPING Uberaba"
+        >
+      </div>
+      <div class="portfolio-item-card">
+        <p class="p-name">CASASHOPPING</p>
+        <div class="p-meta">
+          <span>Uberaba, MG</span>
+          <span>Varejo Luxo</span>
+          <span>2021</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASACOR 2017 -->
+    <div class="portfolio-item reveal" data-delay="0.1">
+      <div class="portfolio-item-img">
+        <img
+          src="assets/img/portfolio/nome-obra-4.jpg"
+          alt="CASACOR 2017"
+        >
+      </div>
+      <div class="portfolio-item-card" style="left: auto; right: 40px;">
+        <p class="p-name">CASACOR 2017</p>
+        <div class="p-meta">
+          <span>São Paulo</span>
+          <span>Mostra de Decoração</span>
+          <span>2017</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FRÊ RESTOBAR -->
+    <div class="portfolio-item reveal" style="grid-column: 1;" data-delay="0.05">
+      <div class="portfolio-item-img">
+        <img
+          src="assets/img/portfolio/Rectangle-266.jpg"
+          alt="Frê Restobar"
+        >
+      </div>
+      <div class="portfolio-item-card">
+        <p class="p-name">Frê Restobar</p>
+        <div class="p-meta">
+          <span>São Paulo</span>
+          <span>Gastronomia</span>
+          <span>2023</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJETOS ADICIONAIS -->
+    <div class="portfolio-item reveal" data-delay="0.15">
+      <div class="portfolio-item-img">
+        <img
+          src="assets/img/portfolio/Rectangle-264.jpg"
+          alt="Projeto Residencial"
+        >
+      </div>
+      <div class="portfolio-item-card" style="left: auto; right: 40px;">
+        <p class="p-name">Residência Jardins</p>
+        <div class="p-meta">
+          <span>São Paulo</span>
+          <span>Residencial</span>
+          <span>2024</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ─── SOBRE A ABORDAGEM ─── -->
+  <div class="portfolio-about">
+    <div class="reveal">
+      <h2 class="editorial-headline">Cada projeto<br>começa numa<br>pedreira.</h2>
+    </div>
+    <div class="reveal d-2">
+      <div class="editorial-body">
+        <p>Nossa equipe acompanha cada etapa — da seleção da chapa na jazida até o acabamento final no canteiro de obras. Esta presença garante a excelência técnica e a fidelidade à visão original do projeto.</p>
+        <p>Trabalhamos com os principais arquitetos e designers do Brasil, transformando matéria mineral em experiências espaciais memoráveis.</p>
+      </div>
+      <a href="quem-somos.html" class="btn-outline" style="margin-top: 40px; display: inline-block;">Conheça Nossa História</a>
+    </div>
+  </div>
+
+  <!-- ─── CTA FINAL ─── -->
+  <section class="cta-section">
+    <h2 class="cta-title">Vamos trabalhar<br>juntos?</h2>
+    <a href="contato.html" class="cta-link">Iniciar um projeto →</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Marmoraria Gramad</div>
+    <nav class="footer-nav">
+      <a href="material-category.html">Mármores</a>
+      <a href="portfolio.html">Projetos</a>
+      <a href="obras.html">Obras</a>
+      <a href="galeria.html">Coleções</a>
+      <a href="quem-somos.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 Marmoraria Gramad. Todos os direitos reservados.</p>
+    <p class="footer-copy">São Paulo · Uberaba, Brasil</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="assets/js/main.js"></script>
+<!-- Floating Contact Button -->
+<div class="floating-contact">
+  <button class="floating-main-btn" aria-label="Abrir contatos">
+    <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+  </button>
+  
+  <div class="floating-options">
+    <a href="https://wa.me/551137193000" class="floating-opt opt-whatsapp" target="_blank">
+      <span class="floating-opt-label">WhatsApp</span>
+      <div class="floating-opt-icon">
+        <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.038 3.284l-.569 2.1c-.149.546.459 1.034.983.814l2.052-.861c.675.242 1.587.434 2.261.433 3.181 0 5.767-2.586 5.768-5.766.001-3.18-2.584-5.77-5.765-5.77zm3.039 8.199c-.145.412-.733.743-1.018.784-.244.035-.558.064-1.63-.377-1.391-.572-2.285-1.993-2.355-2.085-.07-.093-.574-.764-.574-1.458 0-.693.363-1.034.492-1.177.13-.143.283-.178.377-.178.093 0 .185.001.266.005.086.004.202-.033.316.242.117.283.399.972.434 1.043.035.072.058.155.011.248-.046.094-.07.155-.139.236-.07.081-.146.181-.209.242-.07.066-.143.139-.062.278.081.139.362.597.776.964.533.473.985.62 1.133.693.148.073.235.061.32-.036.086-.097.368-.429.467-.576.097-.148.197-.123.332-.073.136.05.861.406 1.01.48.148.074.247.11.283.172.036.063.036.364-.109.775z"/></svg>
+      </div>
+    </a>
+    <a href="tel:+551137193000" class="floating-opt">
+      <span class="floating-opt-label">Televendas</span>
+      <div class="floating-opt-icon">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      </div>
+    </a>
+    <a href="tel:+551136371000" class="floating-opt">
+      <span class="floating-opt-label">Telefone</span>
+      <div class="floating-opt-icon">
+        <svg viewBox="0 0 24 24"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.1-.03-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.58l2.2-2.21c.28-.27.36-.66.25-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+      </div>
+    </a>
+  </div>
+</div>
+</body>
+</html>
+

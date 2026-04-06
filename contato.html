@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato & Orçamentos | Marmoraria Gramad em São Paulo</title>
+  <meta name="description" content="Solicite um orçamento para seu projeto de marmoraria. Atendimento especializado em mármores, granitos e pedras de alto padrão para arquitetura e design em SP.">
+  <link rel="canonical" href="https://www.marmorariagramad.com.br/contato.html">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Inicie seu Projeto: Contato Marmoraria Gramad">
+  <meta property="og:description" content="Nossa equipe está pronta para transformar seu projeto em realidade.">
+  <meta property="og:image" content="https://www.marmorariagramad.com.br/assets/img/site/og-contact.jpg">
+
+  <link rel="icon" href="assets/img/site/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: calc(100vh - var(--nav-h));
+    }
+    .contact-left {
+      background: var(--text-primary);
+      color: var(--bg-base);
+      padding: 100px var(--gutter) 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .contact-left h1 {
+      font-family: var(--font-display);
+      font-size: clamp(40px, 5vw, 72px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      line-height: 0.95;
+      margin-bottom: 40px;
+    }
+    .contact-left h1 em {
+      color: var(--bg-card);
+      font-style: italic;
+    }
+    .contact-info-block {
+      margin-top: auto;
+    }
+    .contact-info-item {
+      margin-bottom: 32px;
+    }
+    .contact-info-item .label {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(0,0,0,0.5);
+      margin-bottom: 8px;
+    }
+    .contact-info-item .value {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--bg-base);
+    }
+    .contact-right {
+      background: var(--bg-light);
+      padding: 100px var(--gutter) 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .contact-form-title {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--bg-card);
+      margin-bottom: 48px;
+    }
+    .form-group {
+      margin-bottom: 40px;
+      border-bottom: 1px solid rgba(29,27,22,0.12);
+      padding-bottom: 12px;
+      position: relative;
+    }
+    .form-group label {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-family: var(--font-body);
+      font-size: 15px;
+      color: var(--text-primary);
+      resize: none;
+      cursor: none;
+      appearance: none;
+    }
+    .form-group textarea { min-height: 80px; line-height: 1.6; }
+    .form-group::after {
+      content: '';
+      position: absolute;
+      bottom: -1px; left: 0;
+      width: 0; height: 2px;
+      background: var(--bg-card);
+      transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .form-group:focus-within::after { width: 100%; }
+    .form-submit {
+      margin-top: 48px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .whatsapp-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      border-bottom: 1px solid rgba(29,27,22,0.15);
+      padding-bottom: 2px;
+      transition: color 0.3s;
+    }
+    .whatsapp-link:hover { color: var(--text-primary); }
+
+    @media (max-width: 900px) {
+      .contact-wrapper { grid-template-columns: 1fr; }
+      .contact-left { min-height: 50vh; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="custom-cursor"></div>
+<div id="page-curtain"></div>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">Marmoraria Gramad</a>
+  <ul class="nav-links">
+    <li><a href="material-category.html">Mármores</a></li>
+    <li><a href="portfolio.html">Projetos</a></li>
+    <li><a href="obras.html">Obras</a></li>
+    <li><a href="galeria.html">Coleções</a></li>
+    <li><a href="quem-somos.html">Sobre</a></li>
+    <li><a href="contato.html" class="active">Contato</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-menu">
+  <div class="mobile-menu-header"><span class="mobile-menu-logo">Marmoraria Gramad</span></div>
+  <ul class="mobile-menu-links">
+    <li><a href="material-category.html">Mármores</a></li>
+    <li><a href="portfolio.html">Projetos</a></li>
+    <li><a href="obras.html">Obras</a></li>
+    <li><a href="galeria.html">Coleções</a></li>
+    <li><a href="quem-somos.html">Sobre</a></li>
+    <li><a href="contato.html" class="active">Contato</a></li>
+  </ul>
+  <div class="mobile-menu-accent"></div>
+  <div class="mobile-menu-footer">
+    <p>São Paulo, SP<br>Brasil</p>
+    <a href="contato.html" class="mobile-menu-cta">Solicitar Orçamento</a>
+  </div>
+</div>
+
+<main>
+  <div class="contact-wrapper">
+
+    <!-- ─── ESQUERDA: Info e contexto ─── -->
+    <div class="contact-left">
+      <div>
+        <p style="font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(0,0,0,0.5); margin-bottom:24px;" class="intro-anim">Fale Conosco</p>
+        <h1 class="intro-anim">Vamos criar<br><em>algo</em><br>único?</h1>
+      </div>
+
+      <div class="contact-info-block intro-anim">
+        <div class="contact-info-item">
+          <p class="label">E-mail</p>
+          <a href="mailto:vendas@marmorariagramad.com.br" class="value" style="color:var(--bg-base); text-decoration:none;">
+            vendas@marmorariagramad.com.br
+          </a>
+        </div>
+        <div class="contact-info-item">
+          <p class="label">Telefone / WhatsApp</p>
+          <a href="https://wa.me/551137193000" class="value" style="color:var(--bg-base); text-decoration:none;">
+            +55 (11) 3719-3000
+          </a>
+        </div>
+        <div class="contact-info-item">
+          <p class="label">Localização</p>
+          <p class="value" style="font-size:14px; font-weight:400; line-height:1.5; color:rgba(0,0,0,0.7);">
+            Av. Onófrio Milano, 500<br>
+            Jaguaré, São Paulo - SP
+          </p>
+        </div>
+
+        <div style="display:flex; gap:20px; margin-top: 40px;">
+          <a href="#" style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(0,0,0,0.5); transition:color 0.3s;" onmouseover="this.style.color='var(--bg-base)'" onmouseout="this.style.color='rgba(0,0,0,0.5)'">Instagram →</a>
+          <a href="#" style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(0,0,0,0.5); transition:color 0.3s;" onmouseover="this.style.color='var(--bg-base)'" onmouseout="this.style.color='rgba(0,0,0,0.5)'">Pinterest →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── DIREITA: Formulário ─── -->
+    <div class="contact-right">
+      <p class="contact-form-title reveal">Envie uma mensagem</p>
+
+      <form action="#" method="POST">
+
+        <div class="form-group reveal">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </div>
+
+        <div class="form-group reveal d-1">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+        </div>
+
+        <div class="form-group reveal d-2">
+          <label for="tipo">Tipo de projeto</label>
+          <select id="tipo" name="tipo">
+            <option value="">Selecione...</option>
+            <option>Residencial</option>
+            <option>Comercial</option>
+            <option>Hoteleiro</option>
+            <option>Gastronomia</option>
+            <option>Outro</option>
+          </select>
+        </div>
+
+        <div class="form-group reveal d-3">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Descreva seu projeto e como podemos ajudar..." required></textarea>
+        </div>
+
+        <div class="form-submit reveal d-4">
+          <button type="submit" class="btn-terracota">Enviar Mensagem</button>
+          <a
+            href="https://wa.me/551137193000?text=Olá! Vim pelo site e gostaria de saber mais sobre os mármores."
+            class="whatsapp-link"
+            target="_blank"
+            rel="noopener"
+          >
+            Ou WhatsApp →
+          </a>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Marmoraria Gramad</div>
+    <nav class="footer-nav">
+      <a href="material-category.html">Mármores</a>
+      <a href="portfolio.html">Projetos</a>
+      <a href="obras.html">Obras</a>
+      <a href="galeria.html">Coleções</a>
+      <a href="quem-somos.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 Marmoraria Gramad. Todos os direitos reservados.</p>
+    <p class="footer-copy">São Paulo, Brasil</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="assets/js/main.js"></script>
+<!-- Floating Contact Button -->
+<div class="floating-contact">
+  <button class="floating-main-btn" aria-label="Abrir contatos">
+    <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+  </button>
+  
+  <div class="floating-options">
+    <a href="https://wa.me/551137193000" class="floating-opt opt-whatsapp" target="_blank">
+      <span class="floating-opt-label">WhatsApp</span>
+      <div class="floating-opt-icon">
+        <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.038 3.284l-.569 2.1c-.149.546.459 1.034.983.814l2.052-.861c.675.242 1.587.434 2.261.433 3.181 0 5.767-2.586 5.768-5.766.001-3.18-2.584-5.77-5.765-5.77zm3.039 8.199c-.145.412-.733.743-1.018.784-.244.035-.558.064-1.63-.377-1.391-.572-2.285-1.993-2.355-2.085-.07-.093-.574-.764-.574-1.458 0-.693.363-1.034.492-1.177.13-.143.283-.178.377-.178.093 0 .185.001.266.005.086.004.202-.033.316.242.117.283.399.972.434 1.043.035.072.058.155.011.248-.046.094-.07.155-.139.236-.07.081-.146.181-.209.242-.07.066-.143.139-.062.278.081.139.362.597.776.964.533.473.985.62 1.133.693.148.073.235.061.32-.036.086-.097.368-.429.467-.576.097-.148.197-.123.332-.073.136.05.861.406 1.01.48.148.074.247.11.283.172.036.063.036.364-.109.775z"/></svg>
+      </div>
+    </a>
+    <a href="tel:+551137193000" class="floating-opt">
+      <span class="floating-opt-label">Televendas</span>
+      <div class="floating-opt-icon">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      </div>
+    </a>
+    <a href="tel:+551136371000" class="floating-opt">
+      <span class="floating-opt-label">Telefone</span>
+      <div class="floating-opt-icon">
+        <svg viewBox="0 0 24 24"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.1-.03-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.58l2.2-2.21c.28-.27.36-.66.25-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+      </div>
+    </a>
+  </div>
+</div>
+</body>
+</html>
+
