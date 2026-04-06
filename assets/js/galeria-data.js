@@ -8,7 +8,7 @@ const collections = {
     grid: 'granitos-grid',
     label: 'Granito Natural',
     items: [
-      { file: 'GRANITO-AMARELO-FLORENCA.jpg', name: 'Amarelo Florença', desc: 'Granito amarelo com veios suaves. Ideal para bancadas, pisos e revestimentos residenciais.' },
+      { file: 'granito-amarelo-florenca.jpg', name: 'Amarelo Florença', desc: 'Granito amarelo com veios suaves. Ideal para bancadas, pisos e revestimentos residenciais.' },
       { file: 'GRANITO-AMARELO-FIORITO.jpg', name: 'Amarelo Fiorito', desc: 'Granito dourado com grãos finos. Excelente para bancadas de cozinha e áreas externas.' },
       { file: 'GRANITO-AMARELO-COLONiL.jpg', name: 'Amarelo Colonial', desc: 'Granito de tom amarelo clássico. Perfeito para pisos e revestimentos de grande formato.' },
       { file: 'GRANITO-AMARELO-ICARAI.jpg', name: 'Amarelo Icaraí', desc: 'Granito amarelo brasileiro. Indicado para bancadas, soleiras e pisos residenciais.' },
